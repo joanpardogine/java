@@ -25,7 +25,7 @@ En el llenguatge Java, els tipus de dades primitius són els components bàsics 
 Hi ha 8 tipus de tipus de dades primitives:
 
 * tipus de dades ```boolean```
-* ºtipus de dades ```byte```
+* tipus de dades ```byte```
 * tipus de dades ```char```
 * tipus de dades ```short```
 * tipus de dades ```int```
@@ -46,6 +46,17 @@ Hi ha 8 tipus de tipus de dades primitives:
 |```float```|0.0f|	4 bytes|
 |```double```|0.0d|	8 bytes|
 
+## Literal
+
+Un **literal** és la representació del codi font d'un valor fix; els literals es representen directament al vostre codi sense necessitat de càlcul. Com es mostra a continuació, és possible assignar un literal a una variable d'un tipus primitiu:
+
+```java
+boolean resultat = true;
+char majusculaC = 'C';
+byte b = 100;
+short s = 10000;
+int i = 100000;
+```
 
 ## Operadors en Java
 
