@@ -10,7 +10,7 @@
 
 # [**A22** - Activitat 22: consum cotxe i preu combustible](./MP03-UF04-A22.md)
 
-# [**A22** - Activitat 22: consum cotxe i preu combustible](./MP03-UF04-A22.md)
+# [**A23** - Activitat 23: Sensació segons la temperatura](./MP03-UF04-A23.md)
 
 
 
