@@ -8,6 +8,12 @@
 [Enunciats, activitats i exercicis amb JAVA](https://docs.google.com/document/d/16LS34amjFw8euDG_pULGB0pzCmT_zRGDVfr8QhrSUas)
 
 
+# [**A22** - Activitat 22: consum cotxe i preu combustible](./MP03-UF04-A22.md)
+
+# [**A22** - Activitat 22: consum cotxe i preu combustible](./MP03-UF04-A22.md)
+
+
+
 # Java
 
 **Java** és un llenguatge de programació de **tipus estàtic**. Vol dir que **TOTES** les variables s'han de **declarar** abans del seu ús. És per això que hem de declarar el tipus i el nom de la variable.
