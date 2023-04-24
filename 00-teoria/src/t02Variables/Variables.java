@@ -11,11 +11,8 @@ public class Variables {
 	public static void main(String[] args) {
 		
 		//Declaració i inicialització de dues variables
-		int enter; //Declaració d'una variable
-		enter = 7; //Inicialització d'una variable
-
-		char lletra; //Declaració d'una variable
-		lletra = 'a'; //Inicialització d'una variable
+		int enter = 7;		
+		char lletra = 'a';		
 		
 		//Declaración i inicializació d'una constant
 		final int QTAT_HORES = 8;	
