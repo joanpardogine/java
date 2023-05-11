@@ -8,6 +8,11 @@
 
 ### [Java Paquets (**Packages**)](./java-paquets.md)
 
+## Teoria de **Enum**
+
+### [Java Tipus d'enumeració (**Enum**)](./java-enum.md)
+
+
 [Enunciats, activitats i exercicis amb JAVA](https://docs.google.com/document/d/16LS34amjFw8euDG_pULGB0pzCmT_zRGDVfr8QhrSUas)
 
 [Getting Started with Java in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
