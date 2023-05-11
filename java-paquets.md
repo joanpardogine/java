@@ -4,14 +4,25 @@
 
 S'utilitza un paquet en **Java** per agrupar **classes relacionades**. Penseu en això com una **carpeta en un directori** de fitxers. Utilitzem paquets per evitar conflictes de noms i per escriure un codi que sigui molt més fàcil de mantenir. Els paquets es divideixen en dues categories:
 
-**1.** [Paquets integrats](./java-paquets.md#1-paquets-integrats) (paquets de l'API de Java)
-**1.** [Paquets definits per l'usuari](./java-paquets.md#2-paquets-definits-per-lusuari) (creeu els vostres propis paquets)
+**1.** [**Paquets integrats**](./java-paquets.md#1-paquets-integrats) (paquets de l'API de Java)
 
-## **1.** Paquets integrats
+**2.** [**Paquets definits per l'usuari**](./java-paquets.md#2-paquets-definits-per-lusuari) (creeu els vostres propis paquets)
+
+## **1.** **Paquets integrats**
 
 L'**```API```** de **Java** és una **biblioteca de classes** escrites prèviament, d'ús gratuït, inclosa a l'entorn de desenvolupament de Java.
 
 La biblioteca conté components per gestionar l'entrada, la programació de bases de dades i molt més. La llista completa es pot trobar al lloc web d'**Oracle**: [https://docs.oracle.com/javase/8/docs/api/](https://docs.oracle.com/javase/8/docs/api/).
+
+<hr>
+<details><summary>Desplega per veure algun exemple de Biblioteques de Classes.</summary>1. [**Package** **```java.util.Scanner```**](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
+
+2. [**Package** **```java.util.InputMismatchException```**](https://docs.oracle.com/javase/8/docs/api/java/util/InputMismatchException.html)
+
+3. [**Package** **```java.util.Calendar```**](https://docs.oracle.com/javase/8/docs/api/java/math/package-summary.html)
+
+</details>
+<hr>
 
 La biblioteca està dividida en paquets i classes. És a dir, es pot importar una sola classe (juntament amb els seus mètodes i atributs) o un paquet sencer que contingui totes les classes que pertanyen al paquet especificat.
 
@@ -19,8 +30,8 @@ Per utilitzar una classe o un paquet de la biblioteca, heu d'utilitzar la **para
 
 > **Sintaxi**
 > ```java
-> import paquet.nom.Class;   // Importa només una classe
-> import package.nom.*;   // Importa un paquet sencer
+> import <nompaquet>.<Classe>;   // Importa del paquet <nompaquet> només la classe amb el nom <Classe>.
+> import <nompaquet>.*;   // Importa tot el paquet <nompaquet> sencer.
 > ```
 
 ### Importa una classe
@@ -48,6 +59,8 @@ Per utilitzar la classe **```Scanner```**, cal crear un objecte de la classe i u
 > 
 >     String nomUsuari = teclat.nextLine();
 >     System.out.println("El teu nom és: " + nomUsuari);
+>
+>     teclat.close();
 >   }
 > }
 >```
@@ -127,29 +140,38 @@ Aquest és el meu paquet!
 ## Contingut del fitxer **```GestioDeMenus.java```**
 
 ```java
-package menu_joan; // indiquem que es troba a una carpeta anomenada menu_joanpackage utils_joan; // indiquem que es troba a una carpeta anomenada utils_joan
+// Declaració del paquet
+package menu_joan;
+// indiquem que es troba a una carpeta anomenada menu_joan
 
+// Declaració dels import's que farà servir la Classe
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+// Declaració de la Classe
 /**
  * @author: Joan Pardo
  */
 public class GestioDeMenus {
+    // Declaració dels atributs de la Classe
+    //   --> En aquest cas no en té!
     
-    // Atributs   --> No en té!
-    
-    // Constructor
+    // Declaració del Constructor de la Classe
+    //   --> En aquest cas es declara el segëunt constructor: 
+    // Una IllegalStateException és una excepció en
+    // temps d'execució a Java que es llança per indicar
+    // que s'ha invocat un mètode en el moment equivocat.
+    // Aquesta excepció s'utilitza per indicar que es
+    // crida un mètode en un moment il·legal o inadequat.
     private GestioDeMenus(){
-        // Una IllegalStateException és una excepció en
-        // temps d'execució a Java que es llança per indicar
-        // que s'ha invocat un mètode en el moment equivocat.
-        // Aquesta excepció s'utilitza per indicar que es
-        // crida un mètode en un moment il·legal o inadequat.
         throw new IllegalStateException("Utility class");
     }
-    
-    // Setters i Getters    --> No en té ja que no té atributs!!
-    // Mètodes
+
+    // Declaració dels Mètodes de la Classe
+    // Declaració dels Setters i Getters de la Classe
+    //     --> No en té ja que no té atributs!!
+
+    // Declaració d'altres Mètodes de la Classe
     /**
      * @author Joan Pardo
      * @param  vectorOpcions  Es tracta d'un vector que conté totes les opcions a mostrar.
